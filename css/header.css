@@ -33,14 +33,12 @@ header{
     justify-content: center;
 }
 
-.logo img {
-    max-height: 65%;
+.logo a img {
+    max-height: 50px;
 }
 
 
 .nav-menu {
-    
-    
     display: flex;
    
     align-items: center;
