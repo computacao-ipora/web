@@ -1,0 +1,46 @@
+.cards-docente {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 90px;
+}
+
+.card-docente {
+	width: 250px;
+	height: 350px;
+	background-color: #1b1b1b;
+	padding: 5px;
+	border-radius: 1.5rem;
+}
+
+
+.foto-docente {
+	width: 150px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	margin-top: 1em;
+}
+
+.nome-docente {
+	font-size: 15px;
+	color: #494949;
+	text-align: center;
+}
+
+.info-docente {
+	margin-top: 1em;
+	margin-left: 15px;
+}
+
+.info-docente i, .info-docente a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #f9f9f9;
+}
+
+.extra-docente {
+	margin-top: 1em;
+	font-size: 13px;
+	font-weight: bold;
+}
