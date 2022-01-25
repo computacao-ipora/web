@@ -1,0 +1,59 @@
+.cards-professor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 90px;
+}
+
+.card-professor {
+	width: 280px;
+	height: 350px;
+	background-color: #1b1b1b;
+	padding: 5px;
+	border-radius: 1.5rem;
+	text-align: center;
+}
+
+.image-professor {
+	width: 150px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	margin-top: 1em;
+}
+
+.name-professor {
+	font-size: 15px;
+	color: #494949;
+	text-align: center;
+	text-decoration: none;
+}
+
+.info-professor {
+	margin: 1rem;
+	text-align: left;
+}
+
+.info-professor i, .info-professor a {
+	font-size: 12px;
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+.extra-professor {
+	margin-top: 1em;
+	font-size: 13px;
+	color: white;
+}
+
+.info-professor .email, .info-professor .instagram {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+} 
+
+.info-professor .email span, .info-professor .instagram span {
+  margin-right: 5px;
+}
