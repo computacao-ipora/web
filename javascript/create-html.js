@@ -22,9 +22,6 @@ var carlos = Object.create(professor);
 carlos.name = "Carlos Antônio Ferreira";
 carlos.email = "carlos.ferreira@ifgoiano.edu.br";
 carlos.description = "Especialista em Arquivologia pelo Instituto de Pós-graduação e Graduação";
-research_lines = [
-	"exemplo1"
-];
 carlos.lattes_url = "http://lattes.cnpq.br/7241511249800428";
 
 // cleon
@@ -40,7 +37,51 @@ cleon.research_lines = [
 ];
 cleon.lattes_url = "http://lattes.cnpq.br/2106704642081867";
 
-var professors = [carlos, cleon];
+var tiba = Object.create(professor);
+tiba.name = "Eliana Tiba Gomes Grande";
+tiba.email = "eliana.tiba@ifgoiano.edu.br";
+tiba.instagram = "https://www.instagram.com/elianatiba/";
+tiba.description = "Doutora em Ciências com especialidade em Matemática pela Universidade do Minho";
+tiba.lattes_url = "http://lattes.cnpq.br/0877661720541361";
+
+var livia = Object.create(professor);
+livia.name = "Lívia Mancine Coelho de Campos";
+livia.email = "livia.mancine@ifgoiano.edu.br";
+livia.description = "Mestra em Ciência da Computação pela Universidade Federal de Goiás.";
+livia.lattes_url = "http://lattes.cnpq.br/8044316700748891";
+
+var luciana = Object.create(professor);
+luciana.name = "Luciana Recart Cardoso";
+luciana.email = "luciana.cardoso@ifgoiano.edu.br";
+luciana.description = "Mestra em Ciência da Computação pela Universidade Federal de Santa Catarina";
+luciana.lattes_url = "http://lattes.cnpq.br/5413977629183306";
+
+var marcos = Object.create(professor);
+marcos.name = "Marcos Alves Vieira";
+marcos.email = "marcos.vieira@ifgoiano.edu.br";
+marcos.description = "Mestre em Ciência da Computação pela Universidade Federal de Goiás";
+marcos.lattes_url = "http://lattes.cnpq.br/8386511137551387";
+
+var newarney = Object.create(professor);
+newarney.name = "Newarney Torrezão da Costa";
+newarney.email = "newarney.costa@ifgoiano.edu.br";
+newarney.description = "Doutorando em Ciência da Computação pela Universidade Federal de Uberlândia";
+newarney.lattes_url = "http://lattes.cnpq.br/4986407746430136";
+
+var thamer = Object.create(professor);
+thamer.name = "Thamer Horbylon Nascimento";
+thamer.email = "thamer.nascimento@ifgoiano.edu.br";
+thamer.description = "Doutorando em Ciência da Computação pela Universidade Federal de Goiás";
+thamer.image_path = "images-professor/thamer.gif";
+thamer.lattes_url = "http://lattes.cnpq.br/2782156026516535";
+
+var wesley = Object.create(professor);
+wesley.name = "Wesley Flávio de Miranda";
+wesley.email = "wesley.miranda@ifgoiano.edu.br";
+wesley.description = "Especialização em Tecnologia de Redes com Cabeamento Estruturado pela Universidade Federal de Lavras";
+wesley.lattes_url = "http://lattes.cnpq.br/8724449088932015";
+
+var professors = [carlos, cleon, tiba, livia, luciana, marcos, newarney, thamer, wesley];
 
 
 /* CREATING HTML */
@@ -112,157 +153,3 @@ for(var i = 0; i < professors.length; i++) {
 	
 	cards_div[0].appendChild(card);
 }
-
-/*
-<div class="cards-professor">
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Carlos Antônio Ferreira</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			carlos.ferreira@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Especialista em Arquivologia pelo Instituto de Pós-graduação e
-			Graduação
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images-professor/cleon.gif" />
-	<h3 class="name-professor">Cleon Xavier Pereira Junior</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			cleon.junior@ifgoiano.edu.br
-		</div>
-		
-		<div class="instagram">
-			<span class="material-icons"> person </span>
-			<a href="https://www.instagram.com/cleonjr/"> instagram</a>
-		</div>
-		<p class="extra-professor">
-			Doutor em Ciência da Computação pela Universidade Federal de
-			Uberlândia
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Eliana Tiba Gomes Grande</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			eliana.tiba@ifgoiano.edu.br
-		</div>
-		
-		<div class="instagram">
-			<span class="material-icons"> person </span>
-			<a href="https://www.instagram.com/elianatiba/"> instagram</a>
-		</div>
-		<p class="extra-professor">
-			Doutora em Ciências com especialidade em Matemática pela
-			Universidade do Minho
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Lívia Mancine Coelho de Campos</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			livia.mancine@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Mestra em Ciência da Computação pela Universidade Federal de
-			Goiás.
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Luciana Recart Cardoso</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			luciana.cardoso@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Mestra em Ciência da Computação pela Universidade Federal de Santa
-			Catarina
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Marcos Alves Vieira</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			marcos.vieira@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Mestre em Ciência da Computação pela Universidade Federal de Goiás
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Newarney Torrezão da Costa</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			newarney.costa@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Doutorando em Ciência da Computação pela Universidade Federal de
-			Uberlândia
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images-professor/thamer.gif" />
-	<h3 class="name-professor">Thamer Horbylon Nascimento</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			thamer.nascimento@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Doutorando em Ciência da Computação pela Universidade Federal de
-			Goiás
-		</p>
-	</div>
-</div>
-
-<div class="card-professor">
-	<img class="image-professor" src="images/user.svg" />
-	<h3 class="name-professor">Wesley Flávio de Miranda</h3>
-	<div class="info-professor">
-		<div class="email">
-			<span class="material-icons"> email </span>
-			wesley.miranda@ifgoiano.edu.br
-		</div>
-
-		<p class="extra-professor">
-			Especialização em Tecnologia de Redes com Cabeamento Estruturado
-			pela Universidade Federal de Lavras
-		</p>
-	</div>
-</div>
-*/
