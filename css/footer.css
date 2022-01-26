@@ -13,15 +13,24 @@ footer .upper {
 	justify-content: space-between;
 }
 
+
 footer .upper .columns {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	width: 50%;
 }
 
+
 footer .upper .columns .column {
 	margin-right: 5rem;
 }
+
+.upper .columns .column .column-title{
+	color:var(--color-secondary);
+}
+
+
 footer .upper .columns .column strong {
 	display: block;
 	margin-bottom: 0.5rem;
@@ -45,6 +54,8 @@ footer .upper .social-media a:hover {
 }
 
 footer .bottom {
+	border-top: 1px solid var(--color-secondary);
+	padding-top: 0.5rem;
 	margin-top: 7rem;
 	display: flex;
 	justify-content: space-between;
