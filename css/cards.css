@@ -24,11 +24,56 @@
     padding: 4rem;
 
     position: relative;
+    margin:1rem;
 
 }
 
-.card-content{
+.card .card-content{
     z-index: 2;
+}
+
+.card .card-items{
+
+    width: 60%;
+}
+
+.card h4{
+
+    color:rgba(255, 255, 255, .6);
+
+    padding:1rem ;
+    padding-left:0 ;
+
+    margin-bottom: 1rem;
+}
+
+.card h2{
+    font-size: 3rem;
+    padding:2rem 0 ;
+}
+
+.card p{
+    font-size: 2rem;
+    max-width: 90%;
+}
+
+
+.card .card-img{
+    max-width: 50rem;
+    width:50%;
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.card .card-img img{
+   width: 100%;
+   height: 100%;
+    
+  
 }
 
 
@@ -40,7 +85,7 @@
 
     background-color: var(--color-secondary);
     max-width: 30%;
-    margin: 1rem;
+
 
     display: flex;
     align-items: flex-start;
@@ -95,9 +140,7 @@
 /* ============================= card medio ===========================*/
 .card.medium{
     
-    max-width: 65%;
-    margin: 1rem;
-    
+    max-width: 65%;    
     display: flex;
     flex-direction: column;
 
@@ -149,7 +192,7 @@
     width: 96.5%;
     max-width: 144rem;
     font-size: 2.5rem;
-    margin:1rem; 
+
 
     
 }
@@ -176,9 +219,10 @@
 
 .card.large .card-img{
     max-height: 30rem;
-    height: 90%;    
-   
-   
+    height: 90%;   
+
+    max-width: 50rem;
+
 
     display: flex;
     align-items: center;
@@ -241,13 +285,3 @@
 }
 
 
-@media (max-width:500px) {
-    .card.small, .card.medium, .card.card.large{
-        max-width: 65%;
-        margin: 1rem;
-        
-        display: flex;
-        flex-direction: column;
-
-    }
-}

@@ -1,0 +1,30 @@
+
+.mobile .list-container {
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+.mobile .list-item {
+	width: 100%;
+	display: grid;
+	margin: 5rem auto;
+}
+
+.mobile .list-item > span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom:.5rem;
+}
+
+.mobile .list-texts-container > span {
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	margin-bottom:2rem;
+}
+
+.mobile .list-texts-container {
+	margin-left: 0;
+}

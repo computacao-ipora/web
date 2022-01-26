@@ -1,0 +1,12 @@
+.mobile .apresentation-content{
+    width: 90%;
+    padding: 2rem;
+    margin: 2rem 0;
+  
+}
+
+.apresentation-img img{
+    
+    max-width: 100%;
+    height: 100%;
+}
