@@ -1,5 +1,3 @@
-@import "/css/mobile/cards_mobile.css";
-
 .card-container{
     width: 100%;
     background-color: var(--color-primary);
