@@ -188,14 +188,16 @@ for (let i = 0; i < professors.length; i++) {
 
 	card.appendChild(info_div);
 
-	const read_more_button = document.createElement("button");
-	read_more_button.innerText = "Mais sobre";
+	if (professors[i].details.length !== 0) {
+		const read_more_button = document.createElement("button");
+		read_more_button.innerText = "Mais sobre";
 
-	read_more_button.addEventListener("click", () => {
-		window.app.showProfessorModal(professors[i]);
-	});
+		read_more_button.addEventListener("click", () => {
+			window.app.showProfessorModal(professors[i]);
+		});
 
-	card.appendChild(read_more_button);
+		card.appendChild(read_more_button);
+	}
 
 	// where each card will be in
 	var cards_div = document.getElementsByClassName("cards-professor");
