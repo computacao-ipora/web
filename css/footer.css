@@ -1,9 +1,12 @@
+@import "/css/mobile/footer_mobile.css";
+
 footer {
 	background-color: var(--color-primary);
 	display: flex;
 	flex-direction: column;
 	color: white;
 
+	margin-top: 7rem;
 	padding: 2rem 7rem;
 	font-size: 1.4rem;
 }

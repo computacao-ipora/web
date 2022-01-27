@@ -1,3 +1,6 @@
+
+@import "/css/mobile/header_mobile.css";
+
 header{
     background-color: var(--color-primary); 
 

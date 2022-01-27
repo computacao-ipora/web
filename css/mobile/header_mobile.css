@@ -31,9 +31,8 @@
 
     margin:1rem 0;
 }
-.mobile .nav-button{
 
-
+.mobile .header-container .nav-button{
     
     display:flex;
     align-items:center;
